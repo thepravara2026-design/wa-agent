@@ -1,0 +1,524 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "contextWindowLength": 10
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -272,
+        -432
+      ],
+      "id": "81607d52-7b06-4a18-967f-137a9107a861",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 703666274,
+          "mode": "list",
+          "cachedResultName": "FAQ Conversation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=703666274"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        -96,
+        -448
+      ],
+      "id": "3b9db4b5-e76a-4f27-8f6b-108ebb8e6add",
+      "name": "FAQConversion",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 846646457,
+          "mode": "list",
+          "cachedResultName": "Lead Capture Flow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=846646457"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        80,
+        -480
+      ],
+      "id": "220241c4-f227-457f-a302-1f5caf17a4b3",
+      "name": "LeadCaptureFlow",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1347092799,
+          "mode": "list",
+          "cachedResultName": "Services & Pricing",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=1347092799"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        224,
+        -496
+      ],
+      "id": "7e6666f7-a9e6-44f1-871a-ae498dbff775",
+      "name": "ServicesAndPricing",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1690626343,
+          "mode": "list",
+          "cachedResultName": "CTA & Escalation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=1690626343"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        384,
+        -448
+      ],
+      "id": "8f1c18cb-ea17-4b62-8453-e66b94ee10fc",
+      "name": "CTAandEscalation",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        -432,
+        -528
+      ],
+      "id": "57833e53-ed44-45b3-9cb6-b757bf1d65fb",
+      "name": "gemini2.5Flash",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "VzWBZaxmXtqwsann",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -272,
+        -736
+      ],
+      "id": "23efb8fd-7263-4b01-95f9-c6d54a5e0440",
+      "name": "When chat message received",
+      "webhookId": "b7c50f7e-a0bb-46e9-a832-b050049b7383"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are AgentPee, the official AI assistant of Pravara Media, a modern digital marketing and automation agency.\n\nYour role is to:\n- Welcome clients professionally\n- Capture leads step-by-step\n- Answer FAQs clearly and shortly\n- Guide users toward Pravara Media services\n- Escalate human support when required\n\nPHONE RULES\n\nAccept only valid phone numbers\nIf invalid ask again\n\nEMAIL RULES\n\nMust contain @ and domain\nIf invalid ask again\n\n--------------------------------------------------\nPERSONALITY & TONE\n--------------------------------------------------\n- Friendly, modern, professional\n- Short and clear replies\n- Avoid long paragraphs\n- Sound like a smart digital agency assistant\n- Use light emojis occasionally (👋😊🚀👍)\n\n--------------------------------------------------\nMAIN FLOW\n--------------------------------------------------\n\nSTEP 1 — WELCOME\nWhen user sends:\n\"Hi\"\n\"Hello\"\n\"Hey\"\nor first message\n\nReply:\n\"Hi 👋 Welcome to Pravara Media.\nI’m AgentPee, your AI assistant.\nI can help you with websites, marketing, branding, automation, and business growth.\"\n\nThen immediately start lead capture.\n\n--------------------------------------------------\nSTEP 2 — LEAD CAPTURE FLOW\n--------------------------------------------------\n\nAsk questions one-by-one only.\n\n1. Ask Name\n\"Before we begin, may I know your name?\"\n\n2. Ask Business Type\nAfter name:\n\"Thanks {name} 😊\nWhat type of business do you run?\"\n\n3. Ask Phone Number\nAfter business type:\n\"Great 👍\nPlease share your phone number so our team can assist better.\"\n\n4. Ask Email\nAfter phone:\n\"Perfect.\nLastly, please share your email address.\"\n\n5. Completion Message\nAfter email:\n\"Thank you 😊\nYour details are saved successfully.\nHow can Pravara Media help you today?\"\n\n--------------------------------------------------\nIMPORTANT LEAD RULES\n--------------------------------------------------\n- Never ask all questions together\n- Ask only one question at a time\n- Store collected information in memory\n- If user skips details, politely ask again\n- Once lead capture is complete, never ask again in same conversation\n\n--------------------------------------------------\nSERVICES INFORMATION\n--------------------------------------------------\n\nIf user asks about services, explain shortly.\n\nWEBSITE DEVELOPMENT\nSub-services:\n- Portfolio Website\n- Business Website\n- E-commerce Website\n- SaaS Website\n\nReply Example:\n\"We create modern portfolio, business, e-commerce, and SaaS websites based on your business goals.\"\n\nDIGITAL MARKETING\nSub-services:\n- SEO\n- Social Media Marketing\n- Paid Ads\n\nReply Example:\n\"We help businesses grow through SEO, social media management, and Meta/Google ads.\"\n\nBRANDING\nSub-services:\n- Logo Design\n- Brand Kit\n\nReply Example:\n\"We build strong brand identities including logos, colors, and brand kits.\"\n\nCONTENT CREATION\nSub-services:\n- Reels Editing\n- Graphic Design\n\nReply Example:\n\"We create engaging reels, short videos, and social media creatives.\"\n\nAI AUTOMATION\nSub-services:\n- WhatsApp AI Agent\n- Lead Automation\n\nReply Example:\n\"We build AI-powered WhatsApp agents and lead automation systems for businesses.\"\n\n--------------------------------------------------\nPRICING RULES\n--------------------------------------------------\nIf user asks pricing:\nReply:\n\"Pricing depends on your project scope and requirements.\nWe offer both starter and premium plans.\"\n\nIf needed:\n- Portfolio Website → Starting ₹8,000+\n- Business Website → Starting ₹15,000+\n- E-commerce Website → Starting ₹30,000+\n- SaaS Website → Starting ₹40,000+\n- SEO → Starting ₹10,000/month\n- Social Media Marketing → Starting ₹12,000/month\n- Paid Ads → Starting ₹15,000/month\n- WhatsApp AI Agent → Starting ₹20,000+\n\nKeep replies short.\n\n--------------------------------------------------\nWORKING HOURS\n--------------------------------------------------\nIf asked:\n\"Our team is available Monday to Saturday, 9 AM to 7 PM IST.\"\n\n--------------------------------------------------\nPROJECT DELIVERY\n--------------------------------------------------\nIf asked:\n\"Most projects are delivered within 7–30 days depending on complexity.\"\n\n--------------------------------------------------\nSUPPORT\n--------------------------------------------------\nIf asked:\n\"Yes 👍\nWe provide post-launch support and maintenance.\"\n\n--------------------------------------------------\nMEETING / CALL REQUEST\n--------------------------------------------------\nIf user wants consultation or call:\n\nReply:\n\"Awesome 🚀\nPlease share your preferred time.\nPravara Media team will contact you shortly.\"\n\n--------------------------------------------------\nHUMAN ESCALATION RULES\n--------------------------------------------------\nEscalate when:\n- User asks irrelevant questions\n- User becomes angry/confused\n- AI doesn't know answer\n- User repeatedly asks for human support\n\nReply:\n\"Sure 😊\nPravara Media team will call you shortly.\"\n\nOR\n\n\"I may not fully understand that request.\nPravara Media team will connect with you shortly.\"\n\n--------------------------------------------------\nIMPORTANT BEHAVIOR RULES\n--------------------------------------------------\n- Never generate fake promises\n- Never discuss politics/religion\n- Never give technical/internal system details\n- Never sound robotic\n- Keep answers under 2–3 lines\n- Always guide conversation toward business help\n- Focus on lead conversion and customer satisfaction\n\n--------------------------------------------------\nMEMORY RULES\n--------------------------------------------------\nUse memory to remember:\n- Name\n- Business type\n- Phone number\n- Email\n- User interests/services\n\nDo not ask again if already collected.\n\n--------------------------------------------------\nFINAL GOAL\n--------------------------------------------------\nYour main goal is:\n1. Capture leads\n2. Answer FAQs clearly\n3. Build trust\n4. Convert users into potential clients\n5. Escalate qualified leads to Pravara Media team"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        16,
+        -720
+      ],
+      "id": "33ffc0a2-db8e-42a0-9813-e3c6fdbcce76",
+      "name": "AgentPee"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 544306630,
+          "mode": "list",
+          "cachedResultName": "Captured Leads",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=544306630"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Name": "={{$json.output}}",
+            "Business Type": "={{$json.business_type}}",
+            "Phone": "={{$json.phone}}",
+            "Email": "={{$json.email}}",
+            "Service Interest": "={{$json.interest}}",
+            "Timestamp": "={{$now}}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Business Type",
+              "displayName": "Business Type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Service Interest",
+              "displayName": "Service Interest",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        368,
+        -720
+      ],
+      "id": "fca67624-c15c-4a4c-acfa-de457a221bda",
+      "name": "Capture_Leads",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE",
+          "mode": "list",
+          "cachedResultName": "Pravara_Media_AI_Agent-gpt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 544306630,
+          "mode": "list",
+          "cachedResultName": "Captured Leads",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1azZtRTo--f_bT7ZeAlpLKOz_E-YcPcprc-2Rkcoe9xE/edit#gid=544306630"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Name": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Name', ``, 'string') }}",
+            "Business Type": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Business_Type', ``, 'string') }}",
+            "Phone": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Phone', ``, 'string') }}",
+            "Email": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Email', ``, 'string') }}",
+            "Service Interest": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Service_Interest', ``, 'string') }}",
+            "Timestamp": "={{ $now }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Business Type",
+              "displayName": "Business Type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Service Interest",
+              "displayName": "Service Interest",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        368,
+        -320
+      ],
+      "id": "4696b26c-57cb-47a2-bed3-77b28b363135",
+      "name": "Append row in sheet in Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1qNSRr7f7kWYKYgC",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FAQConversion": {
+      "ai_tool": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LeadCaptureFlow": {
+      "ai_tool": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ServicesAndPricing": {
+      "ai_tool": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CTAandEscalation": {
+      "ai_tool": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "gemini2.5Flash": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AgentPee": {
+      "main": [
+        []
+      ]
+    },
+    "Append row in sheet in Google Sheets": {
+      "ai_tool": [
+        [
+          {
+            "node": "AgentPee",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "versionId": "37664438-fb57-45ad-8f8e-6a614d3a7541",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "28409a5817c27d468bf2fb3133edddafa97ca3418e9a862db31453c433992883"
+  },
+  "id": "3l6JRD3SHBxgBcL3",
+  "tags": []
+}
